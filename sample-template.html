@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sample.css" />
+    <script src="sample.js"></script>
+    <script src="https://kit.fontawesome.com/8ae6e07cae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"><h2>Vanilla Javascript!</h2></div>            
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+                <a href="#">Login</a>
+            </div>
+            <div class="search">
+                <input type="text" id="search" value="" placeholder="Search using debounce!">
+                <div class="autocomplete"></div>
+            </div>
+        </div>
+        <div class="content">   
+            <div class="content-partition">
+                <form action="" method="post" id="bookForm">
+                    <ul class="book" id="books">
+                        <li>
+                            <h3>Add Book</h3>
+                        </li>
+                        <li>
+                            <p>Title</p>
+                            <input type="text" name="title" id="title">
+                        </li>
+                        <li>
+                            <p>Author</p>
+                            <input type="text" name="author" id="author">
+                        </li>
+                        <li>
+                            <p>MSBN</p>
+                            <input type="text" name="msbn" id="msbn">
+                        </li>
+                        <li>
+                            <button type="submit" class="save">Save</button>
+                            <span id="msg"></span>
+                        </li>
+                    </ul>                
+                </form>
+                
+                <table id="itemList">               
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>MSBN</th>
+                        <th>Action</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="content-partition">
+                <div class="dynamicColor">
+                    <h3>MouseOver Here! 
+                    (Throttling Example)</h3></div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
